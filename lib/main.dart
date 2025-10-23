@@ -130,9 +130,6 @@ void main() {
   runApp(const MyApp());
 }
 
-// ---------------------------
-// Root App (StatelessWidget)
-// ---------------------------
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -150,9 +147,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// ------------------------------------------
-// StatefulWidget untuk daftar tanaman
-// ------------------------------------------
 class PlantCollectionScreen extends StatefulWidget {
   const PlantCollectionScreen({super.key});
 
@@ -170,28 +164,28 @@ class _PlantCollectionScreenState extends State<PlantCollectionScreen> {
       PlantItem(
         key: UniqueKey(),
         name: 'Monstera',
-        description: 
-        'Dikenal dengan daunnya yang besar dan berlubang atau terbelah.'
-        '\nMemberikannya tampilan unik seperti keju Swiss.',
+        description:
+            'Dikenal dengan daunnya yang besar dan berlubang atau terbelah.'
+            '\nMemberikannya tampilan unik seperti keju Swiss.',
         imagePath: 'assets/images/monstera.jpg',
         fromNetwork: false,
       ),
       PlantItem(
         key: UniqueKey(),
         name: 'Adenium',
-        description: 
-        'Dikenal sebagai Kamboja Jepang atau mawar gurun.'
-        '\nTerkenal karena batangnya yang unik seperti bonggol.'
-        '\nDan bunganya yang berwarna-warni.',
+        description:
+            'Dikenal sebagai Kamboja Jepang atau mawar gurun.'
+            '\nTerkenal karena batangnya yang unik seperti bonggol.'
+            '\nDan bunganya yang berwarna-warni.',
         imagePath: 'assets/images/adenium.jpg',
         fromNetwork: false,
       ),
       PlantItem(
         key: UniqueKey(),
         name: 'Lidah Mertua',
-        description: 
-        'Tanaman dengan daun keras, tegak, dan ujung meruncing.'
-        '\nBerasal dari Afrika dan Asia.',
+        description:
+            'Tanaman dengan daun keras, tegak, dan ujung meruncing.'
+            '\nBerasal dari Afrika dan Asia.',
         imagePath:
             'https://st2.depositphotos.com/37052746/46510/v/450/depositphotos_465100916-stock-illustration-plant-mother-in-law-s.jpg',
         fromNetwork: true,
@@ -199,9 +193,9 @@ class _PlantCollectionScreenState extends State<PlantCollectionScreen> {
       PlantItem(
         key: UniqueKey(),
         name: 'Sirih Gading',
-        description: 
-        'Dikenal dengan daunnya yang berbentuk hati berwarna hijau.'
-        '\nDengan corak kuning atau keemasan.',
+        description:
+            'Dikenal dengan daunnya yang berbentuk hati berwarna hijau.'
+            '\nDengan corak kuning atau keemasan.',
         imagePath:
             'https://radarkuningan.disway.id/upload/76de962069596bdf52cb6d9edcdc5be0.jpg',
         fromNetwork: true,
@@ -250,9 +244,6 @@ class _PlantCollectionScreenState extends State<PlantCollectionScreen> {
   }
 }
 
-// ------------------------------------------
-// Widget tanaman
-// ------------------------------------------
 class PlantItem extends StatefulWidget {
   final String name;
   final String description;
@@ -286,8 +277,7 @@ class _PlantItemState extends State<PlantItem> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           ClipRRect(
-            borderRadius:
-                const BorderRadius.vertical(top: Radius.circular(15)),
+            borderRadius: const BorderRadius.vertical(top: Radius.circular(15)),
             child: widget.fromNetwork
                 ? Image.network(
                     widget.imagePath,
@@ -301,8 +291,11 @@ class _PlantItemState extends State<PlantItem> {
                         height: 180,
                         color: Colors.grey.shade200,
                         child: const Center(
-                          child: Icon(Icons.broken_image,
-                              color: Colors.grey, size: 50),
+                          child: Icon(
+                            Icons.broken_image,
+                            color: Colors.grey,
+                            size: 50,
+                          ),
                         ),
                       );
                     },
