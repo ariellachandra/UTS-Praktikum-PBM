@@ -122,7 +122,7 @@
 // }
 
 //////////////////////////////////////////////////////////////////
-///Projek UTS Praktikum
+/// Projek UTS Praktikum
 
 import 'package:flutter/material.dart';
 
@@ -163,41 +163,130 @@ class _PlantCollectionScreenState extends State<PlantCollectionScreen> {
     _plants = [
       PlantItem(
         key: UniqueKey(),
-        name: 'Monstera',
+        name: 'Monstera Deliciosa',
         description:
-            'Dikenal dengan daunnya yang besar dan berlubang atau terbelah.'
-            '\nMemberikannya tampilan unik seperti keju Swiss.',
+            'Dikenal dengan daunnya yang besar dan berlubang atau terbelah. Memberikannya tampilan unik seperti keju Swiss.',
         imagePath: 'assets/images/monstera.jpg',
         fromNetwork: false,
       ),
       PlantItem(
         key: UniqueKey(),
-        name: 'Adenium',
+        name: 'Adenium (Kamboja Jepang)',
         description:
-            'Dikenal sebagai Kamboja Jepang atau mawar gurun.'
-            '\nTerkenal karena batangnya yang unik seperti bonggol.'
-            '\nDan bunganya yang berwarna-warni.',
+            'Dikenal sebagai Kamboja Jepang atau mawar gurun. Terkenal karena batangnya yang unik seperti bonggol dan bunganya yang berwarna-warni.',
         imagePath: 'assets/images/adenium.jpg',
         fromNetwork: false,
       ),
       PlantItem(
         key: UniqueKey(),
-        name: 'Lidah Mertua',
+        name: 'Aglaonema (Sri Rejeki)',
         description:
-            'Tanaman dengan daun keras, tegak, dan ujung meruncing.'
-            '\nBerasal dari Afrika dan Asia.',
+            'Dikenal sebagai tanaman pembawa keberuntungan. Daunnya berwarna hijau dengan kombinasi merah atau perak yang cantik.',
+        imagePath: 'assets/images/aglaonema.jpg',
+        fromNetwork: false,
+      ),
+      PlantItem(
+        key: UniqueKey(),
+        name: 'Anthurium',
+        description:
+            'Tanaman elegan dengan daun lebar dan bunga berbentuk hati. Berwarna merah, putih, atau pink.',
+        imagePath: 'assets/images/anthurium.jpg',
+        fromNetwork: false,
+      ),
+      PlantItem(
+        key: UniqueKey(),
+        name: 'Calathea',
+        description:
+            'Tanaman berdaun unik seperti motif lukisan. Daunnya menutup saat malam hari, cocok di ruangan lembap dan teduh.',
+        imagePath: 'assets/images/calathea.jpeg',
+        fromNetwork: false,
+      ),
+      PlantItem(
+        key: UniqueKey(),
+        name: 'Peace Lily (Spathiphyllum)',
+        description:
+            'Bunga putih elegan dan daun hijau mengilap. Selain cantik, tanaman ini juga mampu menyaring udara dengan baik.',
+        imagePath: 'assets/images/peace-lily.jpg',
+        fromNetwork: false,
+      ),
+      PlantItem(
+        key: UniqueKey(),
+        name: 'Kaktus Mini',
+        description:
+            'Bentuknya kecil dan beragam, tahan kekeringan dan mudah dirawat. Cocok untuk dekorasi meja kerja atau kamar.',
+        imagePath: 'assets/images/kaktus-mini.jpg',
+        fromNetwork: false,
+      ),
+      PlantItem(
+        key: UniqueKey(),
+        name: 'Lidah Mertua (Sansevieria)',
+        description:
+            'Tanaman dengan daun keras, tegak, dan ujung meruncing. Berasal dari Afrika dan Asia.',
         imagePath:
             'https://st2.depositphotos.com/37052746/46510/v/450/depositphotos_465100916-stock-illustration-plant-mother-in-law-s.jpg',
         fromNetwork: true,
       ),
       PlantItem(
         key: UniqueKey(),
-        name: 'Sirih Gading',
+        name: 'Sirih Gading (Epipremnum aureum)',
         description:
-            'Dikenal dengan daunnya yang berbentuk hati berwarna hijau.'
-            '\nDengan corak kuning atau keemasan.',
+            'Dikenal dengan daunnya yang berbentuk hati berwarna hijau dengan corak kuning atau keemasan.',
         imagePath:
             'https://radarkuningan.disway.id/upload/76de962069596bdf52cb6d9edcdc5be0.jpg',
+        fromNetwork: true,
+      ),
+      PlantItem(
+        key: UniqueKey(),
+        name: 'Philodendron',
+        description:
+            'Tanaman tropis dengan daun besar dan mengilap. Memberi kesan segar dan cocok di tempat minim cahaya.',
+        imagePath:
+            'https://cdn.britannica.com/52/161152-050-EAFC7256/philodendron.jpg',
+        fromNetwork: true,
+      ),
+      PlantItem(
+        key: UniqueKey(),
+        name: 'Pilea Peperomioides (Chinese Money Plant)',
+        description:
+            'Daunnya bulat seperti koin, dipercaya membawa keberuntungan. Cocok di tempat teduh dengan cahaya sedang.',
+        imagePath:
+            'https://m.media-amazon.com/images/I/7122SvzWMRL._AC_UF1000,1000_QL80_.jpg',
+        fromNetwork: true,
+      ),
+      PlantItem(
+        key: UniqueKey(),
+        name: 'Begonia Rex',
+        description:
+            'Dikenal dengan corak daun merah, ungu, dan perak yang mencolok. Cocok sebagai tanaman indoor berwarna-warni.',
+        imagePath:
+            'https://leafy-life.com/wp-content/uploads/2020/11/begonia-rex-leafy-life-1.jpg',
+        fromNetwork: true,
+      ),
+      PlantItem(
+        key: UniqueKey(),
+        name: 'ZZ Plant (Zamioculcas zamiifolia)',
+        description:
+            'Daunnya tebal dan mengilap. Sangat tahan kering dan cocok untuk pemula karena mudah dirawat.',
+        imagePath:
+            'https://upload.wikimedia.org/wikipedia/commons/c/cf/Zamioculcas_zamiifolia_1.jpg',
+        fromNetwork: true,
+      ),
+      PlantItem(
+        key: UniqueKey(),
+        name: 'Spider Plant (Chlorophytum comosum)',
+        description:
+            'Daunnya panjang melengkung dengan warna hijau dan putih. Efektif membersihkan udara dari polutan.',
+        imagePath:
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Hierbabuena_0611_Revised.jpg/1200px-Hierbabuena_0611_Revised.jpg',
+        fromNetwork: true,
+      ),
+      PlantItem(
+        key: UniqueKey(),
+        name: 'Tradescantia Zebrina (Wandering Jew)',
+        description:
+            'Daunnya berwarna ungu kehijauan dengan pola garis perak. Mudah tumbuh dan cocok untuk pot gantung.',
+        imagePath:
+            'https://www.planetnatural.com/wp-content/uploads/2023/01/wandering-jew-tradescantia-zebrina.jpg',
         fromNetwork: true,
       ),
     ];
@@ -284,9 +373,8 @@ class _PlantItemState extends State<PlantItem> {
                     height: 180,
                     width: double.infinity,
                     fit: BoxFit.cover,
-                    filterQuality: FilterQuality.low, // biar gak berat
+                    filterQuality: FilterQuality.low,
                     errorBuilder: (context, error, stackTrace) {
-                      // kalau gagal load gambar, gak crash
                       return Container(
                         height: 180,
                         color: Colors.grey.shade200,
@@ -308,34 +396,49 @@ class _PlantItemState extends State<PlantItem> {
                   ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0),
+            padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 16),
             child: Column(
               children: [
                 Text(
                   widget.name,
+                  textAlign: TextAlign.center,
                   style: const TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                const SizedBox(height: 4),
-                Text(
-                  widget.description,
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(fontSize: 14, color: Colors.black54),
-                ),
                 const SizedBox(height: 8),
-                IconButton(
-                  icon: Icon(
-                    _isWatered ? Icons.water_drop : Icons.water_drop_outlined,
-                    color: _isWatered ? Colors.blueAccent : Colors.grey,
-                    size: 32,
-                  ),
-                  onPressed: () {
-                    setState(() {
-                      _isWatered = !_isWatered;
-                    });
-                  },
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    // Deskripsi tanaman
+                    Expanded(
+                      child: Text(
+                        widget.description,
+                        textAlign: TextAlign.justify, // biar rapi
+                        style: const TextStyle(
+                          fontSize: 14,
+                          color: Colors.black54,
+                          height: 1.4,
+                        ),
+                      ),
+                    ),
+                    // Tombol air di sebelah kanan
+                    IconButton(
+                      icon: Icon(
+                        _isWatered
+                            ? Icons.water_drop
+                            : Icons.water_drop_outlined,
+                        color: _isWatered ? Colors.blueAccent : Colors.grey,
+                        size: 30,
+                      ),
+                      onPressed: () {
+                        setState(() {
+                          _isWatered = !_isWatered;
+                        });
+                      },
+                    ),
+                  ],
                 ),
               ],
             ),

@@ -61,6 +61,11 @@ flutter:
   assets:
     - assets/images/monstera.jpg
     - assets/images/adenium.jpg
+    - assets/images/aglaonema.jpg
+    - assets/images/anthurium.jpg
+    - assets/images/calathea.jpeg
+    - assets/images/kaktus-mini.jpg
+    - assets/images/peace-lily.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
